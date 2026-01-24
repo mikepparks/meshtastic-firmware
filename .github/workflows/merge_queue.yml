@@ -134,6 +134,7 @@ jobs:
           - esp32s3
           - esp32c3
           - esp32c6
+          - esp32p4
           - nrf52840
           - rp2040
           - rp2350
@@ -276,6 +277,7 @@ jobs:
           - esp32s3
           - esp32c3
           - esp32c6
+          - esp32p4
           - nrf52840
           - rp2040
           - rp2350
@@ -337,7 +339,7 @@ jobs:
     needs: [release-firmware, version]
     env:
       targets: |-
-        esp32,esp32s3,esp32c3,esp32c6,nrf52840,rp2040,rp2350,stm32
+        esp32,esp32s3,esp32c3,esp32c6,esp32p4,nrf52840,rp2040,rp2350,stm32
     steps:
       - name: Checkout
         uses: actions/checkout@v6
