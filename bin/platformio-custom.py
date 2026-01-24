@@ -33,6 +33,8 @@ def infer_architecture(board_cfg):
         return "esp32-c6"
     if "esp32c3" in mcu_l:
         return "esp32-c3"
+    if "esp32p4" in mcu_l:
+        return "esp32-p4"
     if "esp32" in mcu_l:
         return "esp32"
     if "rp2040" in mcu_l:
